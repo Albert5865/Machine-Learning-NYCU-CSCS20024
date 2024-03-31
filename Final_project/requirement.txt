@@ -1,0 +1,16 @@
+torch==2.0.0 + cu117 
+torchvision==0.15.0 + cu117
+fastai
+
+1. If you're using a Mac with Apple silicon, run this "export PYTORCH_ENABLE_MPS_FALLBACK=1" in the terminal before running the inference code.
+
+2. Put the weight "model.pkl" in the data folder like below to run inference.py :
+
+    inference.py
+    training----------data----------------test
+    inference.py                    |
+                                    |-----train
+                                    |
+                                    |-----model.pkl
+
+    please refer to the report if you encounter any issue running the inference code.
